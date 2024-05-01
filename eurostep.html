@@ -105,7 +105,7 @@
         }
 
         .donate-button {
-            background-color: #0095ff;
+            background-color: #00a634;
             color: #fff;
             border: none;
             border-radius: 5px;
@@ -122,18 +122,16 @@
             font-size: 12px;
         }
 
-        .info-text,
-        .info-link {
+        .info-text {
             margin-right: 10px;
-        }
-
-        .info-link {
             text-decoration: none;
-            color: #0095ff;
+            color: blue;
         }
 
-        .info-link:hover {
-            color: #007bff;
+        .actionbutton {
+            margin-right: 10px;
+            text-decoration: none;
+            color: grey;
         }
     </style>
     <meta charset="UTF-8">
@@ -161,18 +159,18 @@
                     dollar helps.</span>
             </div>
         </div>
-        <div class="donation-amount row">
+        <div class="row">
             <input type="number" class="amount column" />
             <button class="donate-button column">Give Now</button>
         </div>
 
-        <div class="donation-info column">
+        <div class="donation-info row">
             <span class="info-text">Why give $50?</span>
         </div>
     </div>
     <div class="container row">
-        <button class="info-link">Save for later</button>
-        <button class="info-link">Tell your friends</button>
+        <button class="actionbutton">Save for later</button>
+        <button class="actionbutton">Tell your friends</button>
     </div>
 
 </body>
