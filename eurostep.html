@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .container {
+            width: 250px;
+            margin: 0 auto;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+            flex-wrap: wrap;
+        }
+
+        .donation-container {
+            width: 250px;
+            margin: 0 auto;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+
+        /* Create four equal columns that sits next to each other */
+        .column {
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+
+
+        .progress-bar {
+            width: 100%;
+            height: 10px;
+            background-color: #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            width: 80%;
+            height: 100%;
+            background-color: #f04A00;
+            transition: width 0.5s ease-in-out;
+        }
+
+        .progress-text {
+            font-size: 12px;
+            color: #333;
+            margin-top: 5px;
+        }
+
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Tooltip text */
+        .tooltip .tooltiptext {
+            visibility: visible;
+            width: 120px;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -60px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 6px;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .time-remaining {
+            margin: 10px 0;
+        }
+
+        .time-text {
+            font-weight: bold;
+        }
+
+        .donors {
+            margin: 10px 0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .donation-amount {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .amount {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .donate-button {
+            background-color: #0095ff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        .donate-button:hover {
+            background-color: #007bff;
+        }
+
+        .donation-info {
+            margin: 10px 0;
+            font-size: 12px;
+        }
+
+        .info-text,
+        .info-link {
+            margin-right: 10px;
+        }
+
+        .info-link {
+            text-decoration: none;
+            color: #0095ff;
+        }
+
+        .info-link:hover {
+            color: #007bff;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Page</title>
+</head>
+
+<body>
+    <div class="donation-container">
+        <div class="container tooltip">
+            <div class="progress-bar ">
+                <div class="progress-fill">
+                </div>
+            </div>
+            <span class="tooltiptext">$167 still needed</span>
+        </div>
+        <div class="row">
+            <div class="time-remaining">
+                <span class="time-text"><b style="color: #f04A00">Only 3 days left</b> to fund this project</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="donors">
+                <span class="donor-text">Join the <b>42</b> other donors who have already supported this project. Every
+                    dollar helps.</span>
+            </div>
+        </div>
+        <div class="donation-amount row">
+            <input type="number" class="amount column" />
+            <button class="donate-button column">Give Now</button>
+        </div>
+
+        <div class="donation-info column">
+            <span class="info-text">Why give $50?</span>
+        </div>
+    </div>
+    <div class="container row">
+        <button class="info-link">Save for later</button>
+        <button class="info-link">Tell your friends</button>
+    </div>
+
+</body>
+
+
+
+</div>
+
+</html>
